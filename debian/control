@@ -1,0 +1,43 @@
+Source: szn-ghostscript
+Maintainer: Jiri Drbalek <jiri.drbalek@firma.seznam.cz>
+Section: text
+Priority: optional
+Standards-Version: 3.9.8
+Build-Depends:
+    autoconf,
+    debhelper,
+    dh-buildinfo,
+    licensecheck,
+    libregexp-assemble-perl,
+    libimage-exiftool-perl,
+    libfont-ttf-perl,
+    liblcms2-dev (>= 2.5),
+    d-shlibs (>= 0.58~),
+    libjpeg-dev,
+    libpng-dev,
+    libtrio-dev,
+    libtiff-dev,
+    libz-dev,
+    libjbig2dec-dev,
+    libijs-dev,
+    libexpat-dev,
+    libxt-dev,
+    libxext-dev,
+    libx11-dev,
+    libice-dev,
+    libsm-dev,
+    libopenjp2-7-dev,
+    libfreetype6-dev,
+    libfontconfig1-dev,
+    libcups2-dev,
+    libcupsimage2-dev,
+    libpaper-dev,
+    libidn11-dev,
+    freeglut3-dev,
+    pkg-config
+
+Package: szn-ghostscript
+Section: text
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: interpreter for the PostScript language and for PDF
